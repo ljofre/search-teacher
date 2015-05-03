@@ -1,0 +1,26 @@
+{
+  "name": "live",
+  "version": "0.6.3",
+  "main": "live.js",
+  "ignore": [
+    "/.gitignore",
+    "/.npmignore",
+    "/package.json"
+  ],
+  "dependencies": {
+    "backbone": "x",
+    "herit": "x",
+    "underscore": "x"
+  },
+  "homepage": "https://github.com/caseywebdev/live",
+  "_release": "0.6.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.3",
+    "commit": "4b24164b42980a29cfd297a04873a479a3f2e454"
+  },
+  "_source": "git://github.com/caseywebdev/live.git",
+  "_target": "~0.6.3",
+  "_originalSource": "live",
+  "_direct": true
+}
