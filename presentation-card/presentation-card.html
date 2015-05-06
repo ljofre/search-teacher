@@ -4,26 +4,24 @@
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <polymer-element name="presentation-card" attributes="teacherid">
 	<template>
-		<div horizontal layout>
-			<div>
-				<picture>
+		
+		<link rel="stylesheet" href="./presentation-card.css">
+		<div horizontal layout id="user-card">
+			<div vertical layout>
+				<picture id="perfil">
 					<img src="./../pictures/perfil/{{teacherid}}.jpg" alt="">
 				</picture>
+				<div>
+					<h3>Nombre: {{nombre}}</h3>
+				</div>
 			</div>
 			<div vertical layout>
-				<div>
-					<h1>Nombre: {{teacherid}}</h1>
-				</div>
-				<div>
-					<li>asignaturas : {{teacherid}}</li>
-				</div>
-				<div>
-					<h2>ubicación : {{teacherid}}</h2>
+				<div id="chat">
 				</div>
 				<paper-input label="Mensaje" floatingLabel></paper-input>
 			</div>
 		</div>
-		<div></div>
+
 	</template>
 	<script>
 		Polymer('presentation-card', {
