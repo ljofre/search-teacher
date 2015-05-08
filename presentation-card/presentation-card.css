@@ -1,1 +1,23 @@
-#chat{background:#0ff;height:200px;width:200px}#perfil{height:200px;width:200px;border-radius:50%;}#perfil img{border-radius:50%;height:200px;width:200px}#user-card{border:#000}
+#chat {
+  margin:10%;
+  background: #0ff;
+  height: 200px;
+  width: 200px;
+}
+#perfil {
+  margin: 10%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+#perfil img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+#user-card {
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px;
+}
