@@ -1,27 +1,35 @@
 
 #chat {
-  margin:10%;
   background:#607D8B;
-  padding: 20px;
-  border: 20px;
 }
 
 #perfil {
-  margin: 10%;
   border-radius: 50%;
   border:20px;
-  padding: 20px;
+  border-style: solid;
+  border-color: red;
 }
 
 #perfil img {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 #user-card {
-    border-radius: 25px;
+    border-radius: 10px;
     background: #FCE4EC;
     padding: 20px;
     border: 20px;
+    margin: 20px;
+}
+
+#nombre{
+  text-align: center;
+}
+
+#message{
+    margin: 10ppx;
+    padding: 20%;
+    float: left;
 }

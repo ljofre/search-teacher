@@ -1,22 +1,26 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/core-icons/core-icons.html">
-<link rel="import" href="../bower_components/core-icons/social-icons.html">
-<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-icons/social-icons.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
 <polymer-element name="presentation-card" attributes="teacherid">
 	<template>
 		<link rel="stylesheet" href="./presentation-card.css">
 		<div horizontal layout id="user-card">
 			<div vertical layout>
 				<picture id="perfil">
-					<img src="./../pictures/perfil/{{teacherid}}.jpg" alt="">
+					<img src="./../../images/{{teacherid}}.jpg" alt="">
 				</picture>
-				<div>
+				<div id="nombre">
 					<h3>Nombre: {{nombre}}</h3>
 				</div>
 			</div>
 			<div vertical layout>
-				<div id="chat"></div>
-				<paper-input label="Mensaje" floatingLabel></paper-input>
+				<div id="chat">
+					
+				</div>
+				<div id="message">
+					<paper-input label="Mensaje" floatingLabel></paper-input>
+				</div>
 			</div>
 		</div>
 	</template>
