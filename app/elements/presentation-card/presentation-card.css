@@ -1,0 +1,27 @@
+
+#chat {
+  margin:10%;
+  background:#607D8B;
+  padding: 20px;
+  border: 20px;
+}
+
+#perfil {
+  margin: 10%;
+  border-radius: 50%;
+  border:20px;
+  padding: 20px;
+}
+
+#perfil img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+#user-card {
+    border-radius: 25px;
+    background: #FCE4EC;
+    padding: 20px;
+    border: 20px;
+}

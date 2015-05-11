@@ -4,7 +4,6 @@
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <polymer-element name="presentation-card" attributes="teacherid">
 	<template>
-		
 		<link rel="stylesheet" href="./presentation-card.css">
 		<div horizontal layout id="user-card">
 			<div vertical layout>
@@ -16,16 +15,11 @@
 				</div>
 			</div>
 			<div vertical layout>
-				<div id="chat">
-				</div>
+				<div id="chat"></div>
 				<paper-input label="Mensaje" floatingLabel></paper-input>
 			</div>
 		</div>
-
 	</template>
-	<script>
-		Polymer('presentation-card', {
-
-		});
-	</script>
+	<script src="./presentation-card.js">
+</script>
 </polymer-element>
