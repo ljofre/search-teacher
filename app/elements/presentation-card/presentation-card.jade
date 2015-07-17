@@ -1,0 +1,28 @@
+link(rel='import', href='../../bower_components/polymer/polymer.html')
+link(rel='import', href='../../bower_components/core-icons/core-icons.html')
+link(rel='import', href='../../bower_components/core-icons/social-icons.html')
+link(rel='import', href='../../bower_components/paper-input/paper-input.html')
+polymer-element(name='presentation-card', attributes='teacherid')
+    template
+        link(rel='stylesheet', href='./presentation-card.css')
+        #user-card
+            #options
+                #chat
+                    #history
+                    paper-input(label="mensaje", id="new-message")
+            #user
+                img(src='./../../images/{{teacherid}}.jpg')
+                p{{nombre}}
+    content
+        
+  script.
+    Polymer('presentation-card', {
+    ready: function(){
+    if(this.teacherid=="1234"){
+        this.nombre =  "Leonardo Jofré";
+    }
+    if(this.teacherid=="1235"){
+        this.nombre =  "Alondra Cano";
+    }
+    },
+    });

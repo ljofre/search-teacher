@@ -1,0 +1,53 @@
+:host{
+
+}
+/* por defecto eje principal es el vertical */
+:host #user-card {
+    background: lightblue;
+    width: 512px;
+    height: 316.5px;
+    display: flex;
+    margin: 10% 10% 10% 10%;
+}
+
+#options {
+    background: #8d6cab;
+    flex-basis: 62%;
+    margin: 10px;
+}
+
+#user {
+    width: 38%;
+    background: #00a0dc;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+#user img {
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+}
+
+#nombre{
+     font-family: sans-serif
+}
+
+#chat{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#history{
+    background-color: white;
+    height: 80%;
+}
+#new-message{
+    background-color: white;
+    height: 20%;
+}
