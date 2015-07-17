@@ -1,45 +1,41 @@
-<script src="scripts/controllers/testcontroller.js"></script>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="">
-  
+
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>poly foo</title>
+    <title>Carta de presentacion</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
     <link rel="import" href="elements/elements.html">
   </head>
-  
+
   <body unresolved fullbleed layout vertical>
-    <template is="auto-binding" id="app">
-      <core-drawer-panel>
-        <!-- Drawer -->
-        <core-header-panel drawer>
-          <!-- Drawer Toolbar -->
-          <core-toolbar>Menu</core-toolbar>
-          <!-- Drawer Content -->
-          <core-menu selected="0">
-            <core-item label="Buscador"></core-item>
-            <core-item label="Acerca de nosotros"></core-item>
-            <core-item label="App"></core-item>
-          </core-menu>
-        </core-header-panel>
-        <!-- Main -->
-        <core-header-panel main>
-          <presentation-card teacherid="1234"></presentation-card>
-          <presentation-card teacherid="1235"></presentation-card>
-          <!-- Main Toolbar -->
-          <core-toolbar>
-            <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
-            <span>{{appName}}</span>
-          </core-toolbar>
-      </core-drawer-panel>
-    </template>
-    <!-- build:js scripts/app.js -->
-    <script src="scripts/app.js"></script>
-    <!-- endbuild-->
+
+        <h1>Carta de presentación</h1>
+            <div>
+                <presentation-card teacherid="1234"></presentation-card>
+                <presentation-card teacherid="1234"></presentation-card>
+            </div>
+
+
+
+
+
+
+        <h1>Mensajes</h1>
+            Un chat
+
+        <h1>Subir fotos</h1>
+            Poder subir fotos con preguntas ya escritas
+
+        <h1>Calendario</h1>
+        <p>
+            El usuario debe tener toda la información disponible sin necesidad de
+            tener que hacer preguntas acerca de los precios y tiempos
+        </p>
   </body>
 
 </html>

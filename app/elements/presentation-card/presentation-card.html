@@ -5,25 +5,26 @@
 <polymer-element name="presentation-card" attributes="teacherid">
 	<template>
 		<link rel="stylesheet" href="./presentation-card.css">
-		<div horizontal layout id="user-card">
-			<div vertical layout>
-				<picture id="perfil">
-					<img src="./../../images/{{teacherid}}.jpg" alt="">
-				</picture>
-				<div id="nombre">
-					<h3>Nombre: {{nombre}}</h3>
-				</div>
-			</div>
-			<div vertical layout>
-				<div id="chat">
-					
-				</div>
-				<div id="message">
-					<paper-input label="Mensaje" floatingLabel></paper-input>
+			<div id="user-card">
+				<div id="options"></div>
+				<div id="user">
+						<img src="./../../images/{{teacherid}}.jpg" />
+						<p>{{nombre}}</p>
 				</div>
 			</div>
 		</div>
 	</template>
-	<script src="./presentation-card.js">
-</script>
+	<script>
+		Polymer('presentation-card', {
+				ready: function(){
+					if(this.teacherid=="1234"){
+						this.nombre =  "Leonardo Jofré";
+					}
+					if(this.teacherid=="1235"){
+						this.nombre =  "Alondra Cano";
+					}
+
+				},
+		});
+	</script>
 </polymer-element>
