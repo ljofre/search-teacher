@@ -1,39 +1,74 @@
-:host{
-    width: 512px;
-    height: 316.5px;
-}
 /* por defecto eje principal es el vertical */
 :host #user-card {
-    background:  lightblue;
-    height: 100%;
-    width: 100%;
-    display: flex;
+  background: lightblue;
+  width: 512px;
+  height: 316.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10% 10% 10% 10%;
 }
 
-#user-card #options {
-    background: #8d6cab;
-    display: flex;
-    flex-basis: 62%;
-    margin: 1%;
+#options {
+  background: #8d6cab;
+  -webkit-flex-basis: 62%;
+      -ms-flex-preferred-size: 62%;
+          flex-basis: 62%;
+  margin: 10px;
 }
 
-#user-card #user {
-    width: 38%;
-    background: #00a0dc;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1%;
+#user {
+  width: 38%;
+  background: #00a0dc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
 }
 
 #user img {
-    border-radius: 50%;
-    height: 40%;
-    width: 40%;
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
 }
 
-#nombre{
-     font-family: sans-serif
+#nombre {
+  font-family: sans-serif;
+}
+
+#chat {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#history {
+  background-color: white;
+  height: 80%;
+}
+
+#new-message {
+  background-color: white;
+  height: 20%;
 }
